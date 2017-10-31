@@ -7,7 +7,7 @@ angular
 	$scope.username='';
 	$scope.userData='';
 	
-	var client = new ApiAi.ApiAiClient({accessToken: 'e9903f1c851c45358cbedeac989fdc8d '});
+	var client = new ApiAi.ApiAiClient({accessToken: '91b6fc53d9684ad5b3b58dfee339e861'});
     $scope.messageContent = '';
     // Generating a random uuid between 1 and 100 using utility function from lodash library.
     $scope.uuid = _.random(1000000).toString();
