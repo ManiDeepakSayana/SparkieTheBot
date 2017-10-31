@@ -19,7 +19,7 @@
      <li class="collection-item avatar" ng-repeat="message in messages">
 		
      <img ng-src="{{message.imageUrl}}" alt="{{message.sender_uuid}}" class="circle">
-       <span class="title">{{message.name}}</span><i class="prefix mdi-action-alarm"></i><span class="message-date">{{ message.date | date:"MM/dd/yyyy 'at' h:mma"}}</span>
+       <span class="title">{{message.name}}</span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="prefix mdi-action-alarm"></i><span class="message-date">{{ message.date | date:"MM/dd/yyyy 'at' h:mma"}}</span>
        <p></br> {{ message.content }}</p>
      </li>
    </ul> 
