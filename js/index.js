@@ -35,9 +35,11 @@ angular
             $scope.messageContent === '') {
             return;
         }
+		
         Pubnub.publish({
             channel: $scope.channel,
             message: {
+				imageUrl:$scope.avatarUrl($scope.uuid),
 				name:$scope.username,
                 content: $scope.messageContent,
                 sender_uuid: $scope.uuid,
@@ -79,6 +81,7 @@ function handleResponse(serverResponse) {
         console.log(serverResponse);
 		$scope.$apply(function() {
 		$scope.messages.push({
+			imageUrl:$scope.avatarUrl(serverResponse.id),
 			name:"Sparkie",
 			sender_uuid:serverResponse.id,
 			date:serverResponse.timestamp,
