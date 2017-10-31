@@ -81,7 +81,7 @@ function handleResponse(serverResponse) {
         console.log(serverResponse);
 		$scope.$apply(function() {
 		$scope.messages.push({
-			imageUrl:$scope.avatarUrl(serverResponse.id),
+			imageUrl:$scope.avatarUrl("Sparkie"),
 			name:"Sparkie",
 			sender_uuid:serverResponse.id,
 			date:serverResponse.timestamp,
